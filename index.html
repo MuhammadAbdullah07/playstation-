@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Gaming Website Page</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        <div class="container">
+            <div class="navbar">
+                <img src="playstation_img/logo.png" alt="" class="logo">
+                <nav>
+                    <ul id="menulist">
+                        <a href="">Game Controllers</a>
+                        <a href="">VR Accessories</a>
+                        <a href="">Media Remotes</a>
+                        <a href="">Others</a>
+                    </ul>
+                </nav>
+                <img src="playstation_img/menu.png" alt="" class="menu-icon" onclick="togglemenu();">
+            </div>
+
+            <div class="row">
+                <div class="col-1">
+                    <h2>PS4 V2<br>Dualschock 4</h2>
+                    <h3>Wireless Controller for Playstation 4</h3>
+                    <p>(Complatible/Generic)</p>
+                    <h4>$32.50</h4>
+                    <button>Buy Now<img src="playstation_img/arrow.png"></button>
+                </div>
+                <div class="col-2">
+                    <img src="playstation_img/controller.png" alt="" class="controller">
+                    <div class="color-box"></div>
+                    <div class="add-btn">
+                        <img src="playstation_img/add.png" alt="">
+                        <p><small>Add to Cart</small></p>
+                    </div>
+                </div>
+            </div>
+            <div class="social-links">
+                <img src="playstation_img/fb.png" alt="" >
+                <img src="playstation_img/tw.png" alt="">
+                <img src="playstation_img/ig.png" alt="">
+            </div>
+
+        </div>
+        <script>
+            var menulist = document.getElementById("menulist");
+            menulist.style.maxHeight="0px";
+            function togglemenu()
+            {
+                if(menulist.style.maxHeight=="0px")
+                {
+                    menulist.style.maxHeight="130px"
+                }
+                else
+                {
+                    menulist.style.maxHeight="0px";
+                    
+                }
+            }
+        </script>
+    </body>
+</html>
